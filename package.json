@@ -7,7 +7,7 @@
   },
   "engines": {
     "node": "0.8.16"
-  }
+  },
   "dependencies": {
     "ejs": "0.8.3"
     ,"node-xmpp":"0.3.2"
