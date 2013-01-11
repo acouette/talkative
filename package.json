@@ -9,7 +9,8 @@
     "node": "0.6"
   },
   "dependencies": {
-    "ejs": "0.8.3"
+    "node-gyp": "0.8.2"
+    ,"ejs": "0.8.3"
     ,"node-xmpp":"0.3.2"
     ,"socket.io": "0.9.13"
     ,"underscore": "1.4.3"
