@@ -15,5 +15,6 @@
     ,"underscore": "1.4.3"
     , "cookie": "0.0.5"
     , "redis": "0.8.2"
+    , "express": "3.0.6"
   }
 }
