@@ -9,13 +9,10 @@
     "node": "0.6"
   },
   "dependencies": {
-    "node-gyp": "0.8.2"
-    ,"ejs": "0.8.3"
+    "ejs": "0.8.3"
     ,"node-xmpp":"0.3.2"
     ,"socket.io": "0.9.13"
-    ,"underscore": "1.4.3"
     , "cookie": "0.0.5"
-    , "redis": "0.8.2"
     , "express": "3.0.6"
   }
 }
