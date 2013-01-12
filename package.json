@@ -2,11 +2,9 @@
   "name": "talkative",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "start": "node app"
-  },
   "engines": {
-    "node": "0.6"
+    "node": "0.8.x",
+    "npm": "1.1.x"
   },
   "dependencies": {
     "ejs": "0.8.3"
