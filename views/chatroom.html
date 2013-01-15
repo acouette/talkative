@@ -38,7 +38,7 @@
 
     <div class="container-fluid">
 		<div class="row-fluid">
-			<div id="contact-list" class="span2">
+			<div id="contact-list" class="span3">
 				<h3>Contact List</h3>
         
 			</div>
@@ -67,6 +67,9 @@
     <script type="text/javascript">
     $(function () {
       var socket = io.connect('http://localhost:3000');
+        
+
+      socket.emit('message', "yo");
         
         socket.on('presence', function (data) {
           var id = data.from.hashCode();
@@ -122,6 +125,7 @@
         }
       }
 
+
       String.prototype.hashCode = function(){
         var hash = 0, i, char;
         if (this.length == 0) return hash;
@@ -132,6 +136,8 @@
         }
         return hash;
     };
+
+
 
     </script>
 

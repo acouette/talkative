@@ -12,5 +12,9 @@
     ,"socket.io": "0.9.13"
     , "cookie": "0.0.5"
     , "express": "3.0.6"
+    , "redis": "0.8.2"
+    ,"redis-url": "0.1.0"
+    ,"connect-redis": "1.4.5"
+
   }
 }
