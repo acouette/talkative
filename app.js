@@ -7,7 +7,6 @@ var express = require('express')
   , signin = require('./routes/signin')
   , chatroom = require('./routes/chatroom')
   , http = require('http')
-  , path = require('path')
   , talkative = require('./lib/talkative');
 
 var app = express();
@@ -23,7 +22,7 @@ app.configure(function(){
   app.use(express.session({secret: 'secret', store: talkative.getSessionStore() }));
   app.use(express.methodOverride());
   app.use(app.router);
-  app.use(express.static(path.join(__dirname, 'public')));
+  app.use(express.static(__dirname, '/public'));
   // make a custom html template
   app.engine('html', require('ejs').renderFile);
 });
@@ -43,4 +42,5 @@ var server = http.createServer(app).listen(app.get('port'), function(){
 });
 
 var io = require('socket.io').listen(server);
+
 talkative.configureSocket(io);
